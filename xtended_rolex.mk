@@ -17,10 +17,11 @@
 $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-PRODUCT_NAME := havoc_rolex
+PRODUCT_NAME := xtended_rolex
 BOARD_VENDOR := Xiaomi
+XTENDED_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
